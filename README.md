@@ -40,7 +40,7 @@ npm install
 ### 2. Environment Configuration
 Create a `.env` file in the root directory:
 ```env
-MONGODB_URI=mongodb+srv://hasin:your_password@cluster0.qq1z1tn.mongodb.net/taskmanager?retryWrites=true&w=majority&appName=Cluster0
+MONGODB_URI=mongo_atlast_connection_url
 JWT_SECRET=your_jwt_secret_key_here_change_this
 JWT_REFRESH_SECRET=your_jwt_refresh_secret_key_here_change_this
 PORT=5000
