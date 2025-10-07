@@ -265,8 +265,17 @@ src/
 git clone <repo-url>
 cd frontend
 npm install
+```
 
-Tech Stack
+## Running the App
+
+```bash
+npm run dev
+```
+
+Make sure your backend is running at http://localhost:5000.
+
+## Tech Stack
 
 React 19 + JSX
 
