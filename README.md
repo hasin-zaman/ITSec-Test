@@ -204,15 +204,6 @@ curl -H "Authorization: Bearer <your_access_token>" http://localhost:5000/tasks
 3. **Validation Errors**: Ensure request body matches required schema
 4. **Port Conflicts**: Change PORT in `.env` if 5000 is occupied
 
-### Logs
-- Server startup logs connection status
-- MongoDB connection success/failure
-- API request logging
-
-## 📄 License
-
-This project is part of the ITSec Test assessment.
-
 ## 👨‍💻 Developer
 
 Built with Node.js, Express, MongoDB, and JWT authentication following security best practices.
@@ -223,3 +214,71 @@ Built with Node.js, Express, MongoDB, and JWT authentication following security 
 **Database**: ✅ MongoDB Atlas Connected  
 **Authentication**: ✅ JWT with Refresh Tokens  
 **API**: ✅ RESTful endpoints ready for frontend integration
+
+# Task Manager App - Frontend
+
+A simple Task Manager built with **React 19**, **RTK Query**, **Tailwind CSS 4**, and **Shadcn UI**.  
+Supports authentication (register/login), task CRUD, and protected routing.
+
+---
+
+## Features
+
+- **Authentication**
+  - Register & Login pages
+  - JWT stored in localStorage
+  - Protected routes (only accessible if logged in)
+- **Tasks**
+  - Add, view, update, delete tasks
+  - Fetch single task
+- **UI**
+  - Styled with Tailwind CSS & Shadcn UI components
+  - Toast notifications with Sonner
+- **State Management**
+  - Redux Toolkit + RTK Query
+  - API integration with backend at `http://localhost:5000`
+
+---
+
+## Project Structure
+
+src/
+├─ pages/
+│ ├─ LoginPage.jsx
+│ ├─ RegisterPage.jsx
+│ └─ TasksPage.jsx
+├─ store/
+│ ├─ store.js
+│ ├─ apiSlice.js
+│ ├─ authApi.js
+│ └─ tasksApi.js
+├─ components/
+│ └─ ui/ (buttons, inputs, cards, toast)
+└─ App.jsx
+
+
+---
+
+## Installation
+
+```bash
+git clone <repo-url>
+cd frontend
+npm install
+
+Tech Stack
+
+React 19 + JSX
+
+Redux Toolkit + RTK Query
+
+Tailwind CSS 4
+
+Shadcn UI Components
+
+Sonner Toast Notifications
+
+React Router DOM (v6)
+
+LocalStorage for token persistence
+
