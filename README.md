@@ -241,7 +241,7 @@ Supports authentication (register/login), task CRUD, and protected routing.
 ---
 
 ## Project Structure
-
+```
 src/
 ├─ pages/
 │ ├─ LoginPage.jsx
@@ -255,7 +255,7 @@ src/
 ├─ components/
 │ └─ ui/ (buttons, inputs, cards, toast)
 └─ App.jsx
-
+```
 
 ---
 
